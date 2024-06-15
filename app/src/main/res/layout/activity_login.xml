@@ -22,7 +22,7 @@
         android:layout_height="88dp"
         android:layout_marginTop="172dp"
         android:fontFamily="@font/amaranth_bold"
-        android:text="Acesse o seu e-mail locaweb e vea agora quem te mandou e-mail"
+        android:text="Acesse o seu e-mail locaweb e veja agora quem te mandou e-mail"
         android:textColor="#090909"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
