@@ -23,9 +23,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".CaixaEntradaActivity"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".LixeiraActivity"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".EnviadasActivity"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+
     </application>
 
 </manifest>
