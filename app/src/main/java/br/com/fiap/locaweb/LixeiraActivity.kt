@@ -16,11 +16,9 @@ class LixeiraActivity : AppCompatActivity() {
         val emailListTitle: TextView = findViewById(R.id.emailListTitle)
         val emailListView: ListView = findViewById(R.id.emailListView)
 
-        // Set title based on the screen (Inbox, Sent, Trash)
         val screenTitle = intent.getStringExtra("SCREEN_TITLE") ?: "Lixeira"
         emailListTitle.text = screenTitle
 
-        // Dummy data for email list
         val emailData = listOf(
             Email("Atualização no plano de saúde", "Confira as novas opções e benefícios disponíveis.", R.drawable.ic_person, ""),
             Email("Pesquisa de satisfação do cliente", "Participe da nossa pesquisa e nos ajude a melhorar.", R.drawable.ic_person, ""),
@@ -31,7 +29,6 @@ class LixeiraActivity : AppCompatActivity() {
         emailListView.adapter = adapter
 
         backButton.setOnClickListener {
-            // Handle back button click
             finish()
         }
 

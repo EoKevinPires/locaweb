@@ -29,13 +29,22 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".CaixaEntradaActivity"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/Theme.AppCompat.Light">
         </activity>
         <activity android:name=".LixeiraActivity"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/Theme.AppCompat.Light">
         </activity>
         <activity android:name=".EnviadasActivity"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <activity android:name=".MenuActivity"
+            android:theme="@style/Theme.Locaweb">
+        </activity>
+        <activity android:name=".NovoEmailActivity"
+            android:theme="@style/Theme.Locaweb">
+        </activity>
+        <activity android:name=".CadastroActivity"
+            android:theme="@style/Theme.Locaweb">
         </activity>
 
     </application>

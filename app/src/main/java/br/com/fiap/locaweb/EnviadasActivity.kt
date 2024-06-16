@@ -16,11 +16,9 @@ class EnviadasActivity : AppCompatActivity() {
         val emailListTitle: TextView = findViewById(R.id.emailListTitle)
         val emailListView: ListView = findViewById(R.id.emailListView)
 
-        // Set title based on the screen (Inbox, Sent, Trash)
         val screenTitle = intent.getStringExtra("SCREEN_TITLE") ?: "Mensagens enviadas"
         emailListTitle.text = screenTitle
 
-        // Dummy data for email list
         val emailData = listOf(
             Email("Atualização de projeto: Prazo estendido", "O prazo para entrega do projeto foi estendido.", R.drawable.ic_person, "Rafael"),
             Email("Feliz aniversário, Rafa!", "Desejamos um dia especial e muitas felicidades.", R.drawable.ic_person, "Kevin"),
@@ -31,7 +29,6 @@ class EnviadasActivity : AppCompatActivity() {
         emailListView.adapter = adapter
 
         backButton.setOnClickListener {
-            // Handle back button click
             finish()
         }
 

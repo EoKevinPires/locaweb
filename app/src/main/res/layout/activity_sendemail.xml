@@ -59,10 +59,10 @@
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="339dp"
-        android:layout_height="342dp"
+        android:layout_width="362dp"
+        android:layout_height="66dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="168dp"
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@null"
@@ -71,26 +71,25 @@
         android:inputType="textMultiLine"
         android:minHeight="30dp"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDe" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="248dp"
-        android:layout_height="51dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_button"
         android:text="Enviar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -133,7 +132,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextDe" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/voltar_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

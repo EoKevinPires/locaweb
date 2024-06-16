@@ -16,11 +16,9 @@ class CaixaEntradaActivity : AppCompatActivity() {
         val emailListTitle: TextView = findViewById(R.id.emailListTitle)
         val emailListView: ListView = findViewById(R.id.emailListView)
 
-        // Set title based on the screen (Inbox, Sent, Trash)
         val screenTitle = intent.getStringExtra("SCREEN_TITLE") ?: "Caixa de entrada"
         emailListTitle.text = screenTitle
 
-        // Dummy data for email list
         val emailData = listOf(
             Email("Reunião agendada para amanhã", "A reunião será às 10h no auditório principal.", R.drawable.ic_person, ""),
             Email("Parabéns pelo ótimo trabalho!", "Seu empenho no projeto foi essencial para o sucesso.", R.drawable.ic_person, ""),
@@ -31,7 +29,6 @@ class CaixaEntradaActivity : AppCompatActivity() {
         emailListView.adapter = adapter
 
         backButton.setOnClickListener {
-            // Handle back button click
             finish()
         }
 
