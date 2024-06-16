@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Locaweb</string>
+    <string name="back_button_desc">Descrição do botão de voltar</string>
+    <string name="search_icon_desc">Descrição do ícone de busca</string>
+    <string name="search_hint">Digite para buscar</string>
+
 </resources>
