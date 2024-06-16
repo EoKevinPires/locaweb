@@ -22,9 +22,9 @@ class LixeiraActivity : AppCompatActivity() {
 
         // Dummy data for email list
         val emailData = listOf(
-            Email("Atualização no plano de saúde", "Confira as novas opções e benefícios disponíveis.", R.drawable.ic_person),
-            Email("Pesquisa de satisfação do cliente", "Participe da nossa pesquisa e nos ajude a melhorar.", R.drawable.ic_person),
-            Email("Aviso de férias coletivas", "A empresa estará de férias coletivas de 20/12 a 05/01.", R.drawable.ic_person)
+            Email("Atualização no plano de saúde", "Confira as novas opções e benefícios disponíveis.", R.drawable.ic_person, ""),
+            Email("Pesquisa de satisfação do cliente", "Participe da nossa pesquisa e nos ajude a melhorar.", R.drawable.ic_person, ""),
+            Email("Aviso de férias coletivas", "A empresa estará de férias coletivas de 20/12 a 05/01.", R.drawable.ic_person, "")
         )
 
         val adapter = EmailAdapter(this, emailData)

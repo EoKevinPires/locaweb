@@ -22,9 +22,9 @@ class EnviadasActivity : AppCompatActivity() {
 
         // Dummy data for email list
         val emailData = listOf(
-            Email("Atualização de projeto: Prazo estendido", "O prazo para entrega do projeto foi estendido.", R.drawable.ic_person),
-            Email("Feliz aniversário, Rafa!", "Desejamos um dia especial e muitas felicidades.", R.drawable.ic_person),
-            Email("Convite para reunião de feedback", "Agende seu horário para a reunião de feedback.", R.drawable.ic_person)
+            Email("Atualização de projeto: Prazo estendido", "O prazo para entrega do projeto foi estendido.", R.drawable.ic_person, "Rafael"),
+            Email("Feliz aniversário, Rafa!", "Desejamos um dia especial e muitas felicidades.", R.drawable.ic_person, "Kevin"),
+            Email("Convite para reunião de feedback", "Agende seu horário para a reunião de feedback.", R.drawable.ic_person, "Duda")
         )
 
         val adapter = EmailAdapter(this, emailData)

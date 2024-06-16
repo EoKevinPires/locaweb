@@ -22,9 +22,9 @@ class CaixaEntradaActivity : AppCompatActivity() {
 
         // Dummy data for email list
         val emailData = listOf(
-            Email("Reunião agendada para amanhã", "A reunião será às 10h no auditório principal.", R.drawable.ic_person),
-            Email("Parabéns pelo ótimo trabalho!", "Seu empenho no projeto foi essencial para o sucesso.", R.drawable.ic_person),
-            Email("Convite para o evento de networking", "Junte-se a nós para um evento de networking às 18h.", R.drawable.ic_person)
+            Email("Reunião agendada para amanhã", "A reunião será às 10h no auditório principal.", R.drawable.ic_person, ""),
+            Email("Parabéns pelo ótimo trabalho!", "Seu empenho no projeto foi essencial para o sucesso.", R.drawable.ic_person, ""),
+            Email("Convite para o evento de networking", "Junte-se a nós para um evento de networking às 18h.", R.drawable.ic_person, "")
         )
 
         val adapter = EmailAdapter(this, emailData)

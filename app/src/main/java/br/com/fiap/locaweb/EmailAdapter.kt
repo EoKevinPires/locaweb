@@ -8,7 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-data class Email(val title: String, val content: String, val senderImageResId: Int)
+data class Email(val title: String, val content: String, val senderImageResId: Int, val sender: String?)
 
 class EmailAdapter(private val context: Context, private val emails: List<Email>) : BaseAdapter() {
 
@@ -36,6 +36,14 @@ class EmailAdapter(private val context: Context, private val emails: List<Email>
         viewHolder.content.text = email.content
         viewHolder.senderImage.setImageResource(email.senderImageResId)
 
+        // Verificar se o sender é nulo ou vazio
+        if (email.sender.isNullOrEmpty()) {
+            viewHolder.sender.visibility = View.GONE
+        } else {
+            viewHolder.sender.text = email.sender
+            viewHolder.sender.visibility = View.VISIBLE
+        }
+
         return view
     }
 
@@ -43,5 +51,6 @@ class EmailAdapter(private val context: Context, private val emails: List<Email>
         val senderImage: ImageView = view.findViewById(R.id.emailSenderImage)
         val title: TextView = view.findViewById(R.id.emailTitle)
         val content: TextView = view.findViewById(R.id.emailContent)
+        val sender: TextView = view.findViewById(R.id.emailSender)
     }
 }
