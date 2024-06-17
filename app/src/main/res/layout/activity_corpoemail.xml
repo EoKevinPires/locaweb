@@ -3,8 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/voltar_lista_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/button_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/locaweb_logo_0_1"
+        app:layout_constraintStart_toEndOf="@id/voltar_lista_email"
+        app:layout_constraintTop_toTopOf="@id/voltar_lista_email"
+        app:layout_constraintBottom_toBottomOf="@id/voltar_lista_email" />
+
+    <ImageView
+        android:id="@+id/emailSenderImageDetail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voltar_lista_email" />
+
+    <TextView
+        android:id="@+id/emailSenderDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Lucas P."
+        android:textColor="#000000"
+        android:textColorHint="#A19D9D"
+        app:layout_constraintStart_toEndOf="@id/emailSenderImageDetail"
+        app:layout_constraintTop_toTopOf="@id/emailSenderImageDetail" />
+
+    <TextView
+        android:id="@+id/emailTitleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Email Title"
+        app:layout_constraintStart_toStartOf="@id/emailSenderDetail"
+        app:layout_constraintTop_toBottomOf="@id/emailSenderDetail" />
+
+    <EditText
+        android:id="@+id/emailContentDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#151515"
+        android:gravity="start|top"
+        android:hint="Email Content"
+        android:inputType="textMultiLine"
+        android:minHeight="30dp"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTitleDetail" />
 
     <Button
         android:id="@+id/button"
@@ -15,102 +85,6 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/locaweb_logo_0_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/button_voltar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/usuario"
-        app:layout_constraintEnd_toStartOf="@id/textNome"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2" />
-
-    <TextView
-        android:id="@+id/textNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:fontFamily="sans-serif-medium"
-        android:text="Lucas P."
-        android:textColor="#000000"
-        android:textColorHint="#A19D9D"
-        app:layout_constraintStart_toEndOf="@id/imageView6"
-        app:layout_constraintTop_toTopOf="@id/imageView6" />
-
-    <TextView
-        android:id="@+id/textPara"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Para: locaweb@locaweb.com"
-        app:layout_constraintStart_toStartOf="@id/textNome"
-        app:layout_constraintTop_toBottomOf="@id/textNome" />
-
-    <TextView
-        android:id="@+id/textCC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="cc: Desenvolvimento@locaweb.com"
-        app:layout_constraintStart_toStartOf="@id/textPara"
-        app:layout_constraintTop_toBottomOf="@id/textPara" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/barra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textCC" />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="339dp"
-        android:layout_height="342dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:background="@android:color/transparent"
-        android:backgroundTint="#151515"
-        android:gravity="start|top"
-        android:hint="Bom dia,&#10;&#10;Venho por meio deste e-mail solicitar suporte da locaweb.&#10;&#10;Enfrentei alguns problemas e necessito de ajuda."
-        android:inputType="textMultiLine"
-        android:minHeight="30dp"
-        android:scrollbars="vertical"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView7" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

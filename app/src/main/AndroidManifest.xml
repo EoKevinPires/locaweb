@@ -46,6 +46,9 @@
         <activity android:name=".CadastroActivity"
             android:theme="@style/Theme.Locaweb">
         </activity>
+        <activity android:name=".EmailDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
 
     </application>
 
